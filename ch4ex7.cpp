@@ -22,13 +22,24 @@ int main ()
         flag = 0;
     }
     else if (operation == "+" || operation == "add")
+    {   operation = "+";
         result = op1+op2;
+    }
     else if (operation == "-" || operation == "subtract")
+    {
+        operation = "-";
         result = op1-op2;
+    }
     else if (operation == "*" || operation == "multiply")
+    {
+        operation = "*";
         result = op1*op2;
-    else if (operation == "/" || operation == "devide")
+    }
+    else if (operation == "/" || operation == "divide")
+    {
+        operation = "/";
         result = op1/op2;
+    }
     else
     {
         cout<<"Invalid operation entered"<<endl;
